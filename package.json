@@ -1,0 +1,19 @@
+{
+  "name": "booki",
+  "version": "1.0.0",
+  "description": "Site de réservation Booki",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomualdP/P1_OC_Booki.git"
+  },
+  "author": "Romuald Piquet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomualdP/P1_OC_Booki/issues"
+  },
+  "homepage": "https://github.com/RomualdP/P1_OC_Booki#readme"
+}
