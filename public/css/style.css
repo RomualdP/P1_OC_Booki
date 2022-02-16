@@ -129,6 +129,12 @@ nav>ul>li:hover {
     border: 3px solid #F2F2F2;
     align-items: center;
     margin-left: 2rem;
+    transition: .5s;
+    cursor: pointer;
+}
+.filtersBloc:hover {
+    background-color: #DEEBFF;
+    transform: scale(1.03);
 }
 
 .filtersBloc__iconWrap {
@@ -201,6 +207,11 @@ nav>ul>li:hover {
     box-shadow: 0 0 1rem #979797;
     margin: 1rem;
     width: 245px;
+    transition: 0.3s;
+}
+.hostingMain__card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 2rem #979797;
 }
 
 .hostingMain__card img{
@@ -241,6 +252,11 @@ nav>ul>li:hover {
     padding: 5px;
     box-shadow: 0 0 1rem #979797;
     margin-top: 2rem;
+    transition: .3s;
+}
+.hostingPopular__card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 2rem #979797;
 }
 .hostingPopular__card a {
     display: flex;
@@ -293,7 +309,11 @@ nav>ul>li:hover {
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
-    
+    transition: .3s;
+}
+.activities__card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 2rem #979797;
 }
 .activities__card img {
     height: 100%;
