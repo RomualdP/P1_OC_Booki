@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
     <link rel="icon" type="image/svg" sizes="16x16" href="./public/images/logo/logo_minified.svg">
     <script src="https://kit.fontawesome.com/cc80163639.js" crossorigin="anonymous"></script>
 </head>
-
 
 <body>
     <header>
@@ -28,15 +26,14 @@
     <div class="search">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <form method="post" action="">
-            <div class="search__bloc">
+        <form class="search__bloc" method="post" action="">
                 <div class="search__iconWrap">
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <input class="search__field" type="text" name="search" id="search" placeholder="Marseille, France" size="30"/>
-                <input class="search__btn" type="button" value="Recherche" />
-        
-            </div>
+                <input class="search__field" type="text" name="search" id="search" placeholder="Marseille, France" />
+                <button class="search__btn">
+                    <a href="#"><i class="fas fa-search"></i><span>Rechercher</span></a>
+                </button>
         </form>
             <div class="filters">
                 <h3>Filtres</h3>
