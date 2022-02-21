@@ -49,6 +49,7 @@ header {
 
 .logo {
     height: 4rem;
+    margin-left: 10px;
 }
 
 .logo>img{
@@ -80,6 +81,12 @@ nav>ul>li:hover {
     margin: 2rem auto;
     padding: 0 50px;
 }
+.search>h1{
+    margin: auto auto .5rem auto;
+}
+.search>p {
+    margin: .5rem 0 2rem 0;
+}
 .search__bloc {
     display: inline-flex;
     flex-direction: row;
@@ -89,8 +96,8 @@ nav>ul>li:hover {
 
 .search__iconWrap{
     background-color: #F2F2F2;
-    height: 52px;
-    width: 52px;
+    height: 54px;
+    width: 54px;
     border-radius: 1rem 0 0 1rem;
     display: flex;
     align-items: center;
@@ -135,28 +142,33 @@ nav>ul>li:hover {
     flex-wrap: wrap;
     margin-top: 2rem;
 }
-.filters>h3{
-    margin: 0;
-    
+
+.filters__heading {
+    margin-right: 1rem;
 }
 .filtersBloc {
+    position: relative;
     display: flex;
     flex-direction: row;
     border-radius: 2rem;
-    border: 3px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     align-items: center;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     transition: .5s;
     cursor: pointer;
+    z-index: 0;
+    position: relative;
+    height: 3rem;
 }
 .filtersBloc:hover {
     background-color: #DEEBFF;
+    border: 2px solid #DEEBFF;
     transform: scale(1.03);
 }
 
 .filtersBloc__iconWrap {
     background-color: #DEEBFF;
-    border: 1px solid #DEEBFF;
+    border: 2px solid #DEEBFF;
     border-radius: 2rem;
     color: #0065FC;
     height: 3rem;
@@ -164,10 +176,13 @@ nav>ul>li:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    z-index: 1;
+    left:-2px;
 }
 
 .filtersBloc__text {
-    margin: 0 2rem 0 1rem;
+    margin: 0 1rem 0 50px;
 }
 
 .searchResults {
@@ -251,7 +266,7 @@ nav>ul>li:hover {
     background-color: #F2F2F2;
     border-radius: 2rem;
     margin-left : 40px;
-    padding : 2rem;
+    padding : 40px;
     flex:1;
     display: flex;
     flex-direction: column;
@@ -261,7 +276,7 @@ nav>ul>li:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0;
+    margin: 0;
 }
 .hostingPopular__card {
     background-color: #fff;
@@ -284,8 +299,8 @@ nav>ul>li:hover {
     object-fit: cover;
     height: 8rem;
     flex:1;
-
 }
+
 .hostingPopular__card--imgWrap img {
     height: 100%;
     width: 100%;
@@ -302,10 +317,11 @@ nav>ul>li:hover {
 }
 
 .hosting h3{
-    margin: 5px 12px; 
+    margin: 5px 5px; 
+    font-size: 1.1rem;
 }
 .hosting p{
-    margin: 5px 12px; 
+    margin: 5px 5px; 
 }
 /** Activities **/
 
@@ -442,7 +458,7 @@ footer ul {
     /*search*/
     .search {
         padding: 1rem;
-        margin-top: 0;
+        margin: 0 auto;
     }
     .search__btn {
         border-radius: 1rem;
@@ -454,6 +470,12 @@ footer ul {
         font-family: FontAwesome;
         color: white;
         display: contents;
+    }
+    .filters__heading{
+        width: 100%;
+    }
+    .filtersBloc {
+        margin: 5px 5px 5px 0;
     }
     /*hosting*/
     .hosting {
